@@ -61,7 +61,7 @@ export default function LandingPage() {
            
            
             <a
-              href="https://wa.me/628563099921?text=Halo%20saya%20ingin%20memesan%20Flower%20Box"
+              href="https://wa.me/6285135666976?text=Halo%20saya%20ingin%20memesan%20Flower%20Box"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex bg-pink-500 hover:bg-pink-600 text-white dark:bg-pink-600 dark:hover:bg-pink-700 px-6 py-3 rounded-lg text-sm font-medium"
@@ -113,7 +113,7 @@ export default function LandingPage() {
                 Testimonial
               </Link>
               <a
-                href="https://wa.me/628563099921?text=Halo%20saya%20ingin%20memesan%20Flower%20Box"
+                href="https://wa.me/6285135666976?text=Halo%20saya%20ingin%20memesan%20Flower%20Box"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-pink-500 hover:bg-pink-600 text-white dark:bg-pink-600 dark:hover:bg-pink-700 px-4 py-2 rounded-lg text-sm font-medium text-center"
@@ -142,7 +142,7 @@ export default function LandingPage() {
                 </div>
                 <div className="flex flex-col gap-2 sm:flex-row">
                   <a
-                    href="https://wa.me/628563099921?text=Halo%20saya%20ingin%20melihat%20katalog%20Flower%20Box"
+                    href="https://wa.me/6285135666976?text=Halo%20saya%20ingin%20melihat%20katalog%20Flower%20Box"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white dark:bg-pink-600 dark:hover:bg-pink-700 rounded-lg text-sm sm:text-base font-semibold"
@@ -150,7 +150,7 @@ export default function LandingPage() {
                     Lihat Katalog
                   </a>
                   <a
-                    href="https://wa.me/628563099921?text=Halo%20saya%20ingin%20bertanya%20mengenai%20Flower%20Box"
+                    href="https://wa.me/6285135666976?text=Halo%20saya%20ingin%20bertanya%20mengenai%20Flower%20Box"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center px-6 py-3 border-2 border-pink-500 text-pink-500 hover:bg-pink-100 dark:border-pink-400 dark:text-pink-400 dark:hover:bg-pink-950 rounded-lg text-sm sm:text-base font-semibold"
@@ -359,7 +359,7 @@ export default function LandingPage() {
             <div className="flex flex-col space-y-2">
               <h3 className="font-bold text-pink-700 dark:text-pink-300">Kontak</h3>
               <p className="text-sm text-pink-600 dark:text-pink-400">Email: - </p>
-              <p className="text-sm text-pink-600 dark:text-pink-400">Telepon: 085 630 99921</p>
+              <p className="text-sm text-pink-600 dark:text-pink-400">Telepon: 085 135 666 976</p>
             </div>
             <div className="flex flex-col space-y-2">
               <h3 className="font-bold text-pink-700 dark:text-pink-300">Ikuti Kami</h3>
