@@ -202,7 +202,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        Untuk mengubah bingkai foto menjadi horizontal, Anda perlu menyesuaikan beberapa gaya CSS dan struktur HTML. Berikut adalah modifikasi pada bagian `Image` yang ada di dalam grid. Anda bisa mengubah `aspect-square` menjadi `aspect-video` atau menyesuaikan lebar dan tinggi gambar untuk memberikan efek horizontal. Berikut adalah contohnya:
+        
 
 
 <section id="gallery" className="w-full py-12 md:py-24 lg:py-32 bg-mint-100 dark:bg-gray-900">
@@ -280,7 +280,6 @@ export default function LandingPage() {
 </section>
 ```
 
-Dengan menggunakan `aspect-video`, gambar akan lebih lebar daripada tinggi, memberikan tampilan horizontal. Anda juga bisa menyesuaikan nilai `height` dan `width` untuk mendapatkan proporsi yang diinginkan. Selamat mencoba! 🌼
 
         <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-pink-100 dark:bg-gray-800">
           <div className="container mx-auto px-4 md:px-6">
