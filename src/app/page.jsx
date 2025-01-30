@@ -202,79 +202,85 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section id="gallery" className="w-full py-12 md:py-24 lg:py-32 bg-mint-100 dark:bg-gray-900">
-          <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 sm:mb-12 text-green-700 dark:text-green-300">
-              Galeri Flower Box
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              {/* Gambar 1 */}
-              <Image
-                alt="Flower Box 1"
-                className="aspect-square object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                height="300"
-                src="/images/1.jpg"
-                width="300"
-              />
-              {/* Gambar 2 */}
-              <Image
-                alt="Flower Box 2"
-                className="aspect-square object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                height="300"
-                src="/images/1.jpg"
-                width="300"
-              />
-              {/* Gambar 3 */}
-              <Image
-                alt="Flower Box 3"
-                className="aspect-square object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                height="300"
-                src="/images/1.jpg"
-                width="300"
-              />
-              {/* Gambar 4 */}
-              <Image
-                alt="Flower Box 4"
-                className="aspect-square object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                height="300"
-                src="/images/1.jpg"
-                width="300"
-              />
-              {/* Gambar 5 */}
-              <Image
-                alt="Flower Box 5"
-                className="aspect-square object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                height="300"
-                src="/images/flower-box-5.jpg"
-                width="300"
-              />
-              {/* Gambar 6 */}
-              <Image
-                alt="Flower Box 6"
-                className="aspect-square object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                height="300"
-                src="/images/flower-box-6.jpg"
-                width="300"
-              />
-              {/* Gambar 7 */}
-              <Image
-                alt="Flower Box 7"
-                className="aspect-square object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                height="300"
-                src="/images/flower-box-7.jpg"
-                width="300"
-              />
-              {/* Gambar 8 */}
-              <Image
-                alt="Flower Box 8"
-                className="aspect-square object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                height="300"
-                src="/images/flower-box-8.jpg"
-                width="300"
-              />
-            </div>
-          </div>
-        </section>
+        Untuk mengubah bingkai foto menjadi horizontal, Anda perlu menyesuaikan beberapa gaya CSS dan struktur HTML. Berikut adalah modifikasi pada bagian `Image` yang ada di dalam grid. Anda bisa mengubah `aspect-square` menjadi `aspect-video` atau menyesuaikan lebar dan tinggi gambar untuk memberikan efek horizontal. Berikut adalah contohnya:
+
+
+<section id="gallery" className="w-full py-12 md:py-24 lg:py-32 bg-mint-100 dark:bg-gray-900">
+  <div className="container mx-auto px-4 md:px-6">
+    <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 sm:mb-12 text-green-700 dark:text-green-300">
+      Galeri Flower Box
+    </h2>
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+      {/* Gambar 1 */}
+      <Image
+        alt="Flower Box 1"
+        className="aspect-video object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        height="200" // Ubah tinggi sesuai kebutuhan
+        src="/images/1.jpg"
+        width="300" // Ubah lebar sesuai kebutuhan
+      />
+      {/* Gambar 2 */}
+      <Image
+        alt="Flower Box 2"
+        className="aspect-video object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        height="200"
+        src="/images/1.jpg"
+        width="300"
+      />
+      {/* Gambar 3 */}
+      <Image
+        alt="Flower Box 3"
+        className="aspect-video object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        height="200"
+        src="/images/1.jpg"
+        width="300"
+      />
+      {/* Gambar 4 */}
+      <Image
+        alt="Flower Box 4"
+        className="aspect-video object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        height="200"
+        src="/images/1.jpg"
+        width="300"
+      />
+      {/* Gambar 5 */}
+      <Image
+        alt="Flower Box 5"
+        className="aspect-video object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        height="200"
+        src="/images/flower-box-5.jpg"
+        width="300"
+      />
+      {/* Gambar 6 */}
+      <Image
+        alt="Flower Box 6"
+        className="aspect-video object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        height="200"
+        src="/images/flower-box-6.jpg"
+        width="300"
+      />
+      {/* Gambar 7 */}
+      <Image
+        alt="Flower Box 7"
+        className="aspect-video object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        height="200"
+        src="/images/flower-box-7.jpg"
+        width="300"
+      />
+      {/* Gambar 8 */}
+      <Image
+        alt="Flower Box 8"
+        className="aspect-video object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        height="200"
+        src="/images/flower-box-8.jpg"
+        width="300"
+      />
+    </div>
+  </div>
+</section>
+```
+
+Dengan menggunakan `aspect-video`, gambar akan lebih lebar daripada tinggi, memberikan tampilan horizontal. Anda juga bisa menyesuaikan nilai `height` dan `width` untuk mendapatkan proporsi yang diinginkan. Selamat mencoba! 🌼
 
         <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-pink-100 dark:bg-gray-800">
           <div className="container mx-auto px-4 md:px-6">
