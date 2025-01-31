@@ -212,14 +212,21 @@ export default function LandingPage() {
     </h2>
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
       {/* Gambar 1 */}
-      <Image
-  alt="Flower Box 2"
-  className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-  height="300"
-  src="/images/1.jpg"
-  width="200"
+       <Image
+        alt="Flower Box 1"
+        className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        height="300"
+        src="/images/1.jpg"
+        width="200"
+            />
+     <Image
+        alt="Flower Box 2"
+        className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+        height="300"
+        src="/images/1.jpg"
+        width="200"
       />
-      <Image
+    <Image
         alt="Flower Box 3"
         className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         height="300"
