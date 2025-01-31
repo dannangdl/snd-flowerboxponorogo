@@ -163,8 +163,8 @@ export default function LandingPage() {
                alt="Flower Box"
                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                height="550" // Ubah tinggi agar lebih rendah
-               src="/images/1.jpg?height=300&width=550" // Sesuaikan query parameter jika perlu
-               width="300" // Lebar tetap lebih besar dari tinggi
+               src="/images/1.jpg?height=650&width=550" // Sesuaikan query parameter jika perlu
+               width="550" // Lebar tetap lebih besar dari tinggi
               />
             </div>
           </div>
