@@ -223,14 +223,14 @@ export default function LandingPage() {
         alt="Flower Box 2"
         className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         height="300"
-        src="/images/3.jpeg"
+        src="/images/3.jpg"
         width="200"
       />
     <Image
         alt="Flower Box 3"
         className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         height="300"
-        src="/images/1.jpg"
+        src="/images/4.jpeg"
         width="200"
       />
       <Image
