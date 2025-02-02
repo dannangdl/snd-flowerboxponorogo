@@ -230,42 +230,42 @@ export default function LandingPage() {
         alt="Flower Box 3"
         className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         height="300"
-        src="/images/4.jpeg"
+        src="/images/4.jpg"
         width="200"
       />
       <Image
         alt="Flower Box 4"
         className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         height="300"
-        src="/images/1.jpg"
+        src="/images/5.jpg"
         width="200"
       />
       <Image
         alt="Flower Box 5"
         className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         height="300"
-        src="/images/flower-box-5.jpg"
+        src="/images/6.jpg"
         width="200"
       />
       <Image
         alt="Flower Box 6"
         className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         height="300"
-        src="/images/flower-box-6.jpg"
+        src="/images/7.jpg"
         width="200"
       />
       <Image
         alt="Flower Box 7"
         className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         height="300"
-        src="/images/flower-box-7.jpg"
+        src="/images/8.jpg"
         width="200"
       />
       <Image
         alt="Flower Box 8"
         className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         height="300"
-        src="/images/flower-box-8.jpg"
+        src="/images/9.jpg"
         width="200"
       />
  
