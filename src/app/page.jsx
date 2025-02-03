@@ -28,7 +28,7 @@ export default function LandingPage() {
       <header className="sticky top-0 z-50 w-full border-b border-pink-200 dark:border-gray-700 bg-white/95 dark:bg-gray-800/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-gray-800/60">
         <div className="container flex h-16 items-center justify-between mx-auto px-4">
           <Link className="flex items-center space-x-2" href="/">
-            <img src="/images/2.jpg" alt="FlowerBox Logo" className="h-6 w-6" />
+            <img src="/images/2.png" alt="FlowerBox Logo" className="h-6 w-6" />
             <span className="font-bold text-pink-700 dark:text-pink-300 sm:inline-block">SnD FlowerBoxPonorogo</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -163,7 +163,7 @@ export default function LandingPage() {
                alt="Flower Box"
                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                height="750" // Ubah tinggi agar lebih rendah
-               src="images/10.png" // Sesuaikan query parameter jika perlu
+               src="images/2.png" // Sesuaikan query parameter jika perlu
                width="550" // Lebar tetap lebih besar dari tinggi
               />
             </div>
