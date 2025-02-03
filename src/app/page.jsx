@@ -6,10 +6,26 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Flower, Truck, Clock, Star, Moon, Sun, Menu } from "lucide-react"
 import { useState, useEffect } from "react"
+import { CommentForm } from "src/components/ui/CommentForm.tsx"
 
 export default function LandingPage() {
   const [darkMode, setDarkMode] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [comments, setComments] = useState([
+    {
+      name: "Rina",
+      comment: "Flower box yang saya sewa sangat cantik dan segar. Sangat meningkatkan suasana acara pernikahan saya!",
+    },
+    {
+      name: "Budi",
+      comment: "Pelayanan yang sangat profesional. Pengiriman tepat waktu dan flower box dalam kondisi sempurna.",
+    },
+    {
+      name: "Siti",
+      comment:
+        "Saya sangat puas dengan variasi desain yang ditawarkan. Pasti akan menggunakan jasa ini lagi untuk acara mendatang.",
+    },
+  ])
 
   useEffect(() => {
     if (darkMode) {
@@ -23,12 +39,16 @@ export default function LandingPage() {
     setDarkMode(!darkMode)
   }
 
+  const addComment = (name: string, comment: string) => {
+    setComments([...comments, { name, comment }])
+  }
+
   return (
     <div className="flex flex-col min-h-screen bg-pink-50 dark:bg-gray-900 transition-colors duration-300">
       <header className="sticky top-0 z-50 w-full border-b border-pink-200 dark:border-gray-700 bg-white/95 dark:bg-gray-800/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-gray-800/60">
         <div className="container flex h-16 items-center justify-between mx-auto px-4">
           <Link className="flex items-center space-x-2" href="/">
-            <img src="/images/2.png" alt="FlowerBox Logo" className="h-6 w-6" />
+            <img src="/images/2.jpg" alt="FlowerBox Logo" className="h-6 w-6" />
             <span className="font-bold text-pink-700 dark:text-pink-300 sm:inline-block">SnD FlowerBoxPonorogo</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -56,10 +76,14 @@ export default function LandingPage() {
             >
               Testimonial
             </Link>
+            <Link
+              href="#pesan-kesan"
+              className="text-pink-700 dark:text-pink-300 hover:text-pink-500 dark:hover:text-pink-400"
+            >
+              Pesan dan Kesan
+            </Link>
           </nav>
           <div className="flex items-center space-x-2">
-           
-           
             <a
               href="https://wa.me/6285135666976?text=Halo%20saya%20ingin%20memesan%20Flower%20Box"
               target="_blank"
@@ -77,7 +101,7 @@ export default function LandingPage() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
-            <Menu className="h-5 w-5" />
+              <Menu className="h-5 w-5" />
             </Button>
           </div>
         </div>
@@ -110,7 +134,14 @@ export default function LandingPage() {
                 className="text-pink-700 dark:text-pink-300 hover:text-pink-500 dark:hover:text-pink-400"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Testimonial
+                Apa Kata Mereka
+              </Link>
+              <Link
+                href="#pesan-kesan"
+                className="text-pink-700 dark:text-pink-300 hover:text-pink-500 dark:hover:text-pink-400"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Pesan dan Kesan
               </Link>
               <a
                 href="https://wa.me/6285135666976?text=Halo%20saya%20ingin%20memesan%20Flower%20Box"
@@ -160,11 +191,11 @@ export default function LandingPage() {
                 </div>
               </div>
               <Image
-               alt="Flower Box"
-               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-               height="750" // Ubah tinggi agar lebih rendah
-               src="images/2.png" // Sesuaikan query parameter jika perlu
-               width="550" // Lebar tetap lebih besar dari tinggi
+                alt="Flower Box"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+                height="750"
+                src="images/10.png"
+                width="550"
               />
             </div>
           </div>
@@ -202,79 +233,72 @@ export default function LandingPage() {
           </div>
         </section>
 
-        
-
-
-<section id="gallery" className="w-full py-12 md:py-24 lg:py-32 bg-mint-100 dark:bg-gray-900">
-  <div className="container mx-auto px-4 md:px-6">
-    <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 sm:mb-12 text-green-700 dark:text-green-300">
-      Galeri Flower Box
-    </h2>
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-      {/* Gambar 1 */}
-       <Image
-        alt="Flower Box 1"
-        className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-        height="300"
-        src="/images/1.jpg"
-        width="200"
-            />
-     <Image
-        alt="Flower Box 2"
-        className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-        height="300"
-        src="/images/3.jpg"
-        width="200"
-      />
-    <Image
-        alt="Flower Box 3"
-        className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-        height="300"
-        src="/images/4.jpg"
-        width="200"
-      />
-      <Image
-        alt="Flower Box 4"
-        className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-        height="300"
-        src="/images/5.jpg"
-        width="200"
-      />
-      <Image
-        alt="Flower Box 5"
-        className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-        height="300"
-        src="/images/6.jpg"
-        width="200"
-      />
-      <Image
-        alt="Flower Box 6"
-        className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-        height="300"
-        src="/images/7.jpg"
-        width="200"
-      />
-      <Image
-        alt="Flower Box 7"
-        className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-        height="300"
-        src="/images/8.jpg"
-        width="200"
-      />
-      <Image
-        alt="Flower Box 8"
-        className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-        height="300"
-        src="/images/9.jpg"
-        width="200"
-      />
- 
-    </div>
-  </div>
-</section>
-```
-
-
+        <section id="gallery" className="w-full py-12 md:py-24 lg:py-32 bg-mint-100 dark:bg-gray-900">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 sm:mb-12 text-green-700 dark:text-green-300">
+              Galeri Flower Box
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+              {/* Gambar 1 */}
+              <Image
+                alt="Flower Box 1"
+                className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                height="300"
+                src="/images/1.jpg"
+                width="200"
+              />
+              <Image
+                alt="Flower Box 2"
+                className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                height="300"
+                src="/images/3.jpg"
+                width="200"
+              />
+              <Image
+                alt="Flower Box 3"
+                className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                height="300"
+                src="/images/4.jpg"
+                width="200"
+              />
+              <Image
+                alt="Flower Box 4"
+                className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                height="300"
+                src="/images/5.jpg"
+                width="200"
+              />
+              <Image
+                alt="Flower Box 5"
+                className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                height="300"
+                src="/images/6.jpg"
+                width="200"
+              />
+              <Image
+                alt="Flower Box 6"
+                className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                height="300"
+                src="/images/7.jpg"
+                width="200"
+              />
+              <Image
+                alt="Flower Box 7"
+                className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                height="300"
+                src="/images/8.jpg"
+                width="200"
+              />
+              <Image
+                alt="Flower Box 8"
+                className="aspect-[3/4] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                height="300"
+                src="/images/9.jpg"
+                width="200"
+              />
+            </div>
+          </div>
+        </section>
         <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-pink-100 dark:bg-gray-800">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 sm:mb-12 text-pink-700 dark:text-pink-300">
@@ -316,24 +340,8 @@ export default function LandingPage() {
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 sm:mb-12 text-purple-700 dark:text-purple-300">
               Apa Kata Mereka
             </h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  name: "Rina",
-                  comment:
-                    "Flower box yang saya sewa sangat cantik dan segar. Sangat meningkatkan suasana acara pernikahan saya!",
-                },
-                {
-                  name: "Budi",
-                  comment:
-                    "Pelayanan yang sangat profesional. Pengiriman tepat waktu dan flower box dalam kondisi sempurna.",
-                },
-                {
-                  name: "Siti",
-                  comment:
-                    "Saya sangat puas dengan variasi desain yang ditawarkan. Pasti akan menggunakan jasa ini lagi untuk acara mendatang.",
-                },
-              ].map((testimonial, index) => (
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mb-8">
+              {comments.map((testimonial, index) => (
                 <Card key={index} className="bg-white dark:bg-gray-700 border-purple-200 dark:border-purple-800">
                   <CardContent className="p-6">
                     <p className="mb-4 italic text-purple-600 dark:text-purple-400">"{testimonial.comment}"</p>
@@ -341,6 +349,20 @@ export default function LandingPage() {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+            <div className="max-w-md mx-auto">
+              <h3 className="text-xl font-bold mb-4 text-purple-700 dark:text-purple-300">Tambahkan Komentar Anda</h3>
+              <CommentForm onSubmit={addComment} />
+            </div>
+          </div>
+        </section>
+        <section id="pesan-kesan" className="w-full py-12 md:py-24 lg:py-32 bg-pink-100 dark:bg-gray-800">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 sm:mb-12 text-pink-700 dark:text-pink-300">
+              Pesan dan Kesan
+            </h2>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {/* Tambahkan konten pesan dan kesan di sini */}
             </div>
           </div>
         </section>
